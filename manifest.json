@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Shorts Time Checker",
+  "version": "1.0",
+  "description": "Prompts the user if they want to throw away their time when visiting YouTube Shorts.",
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/shorts*",
+        "https://youtube.com/shorts*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
