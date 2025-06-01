@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "YouTube Shorts Time Checker",
+  "name": "Doomscrolling Preventer",
   "version": "1.0",
   "description": "Prompts the user if they want to throw away their time when visiting YouTube Shorts.",
   "permissions": [
